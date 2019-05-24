@@ -15,14 +15,19 @@ public class Motorcycle extends Bicycle {
         this.motor = motor;
     }
 
+    public String toString() {
+        return wheelShape + " " + wheelNum + " " + seatShape + " " + pedalNum + " " + gastank + " " + motor;
+    }
+
     public static void main (String[]args){
         Motorcycle motorcycle = new Motorcycle();
-        System.out.println(motorcycle.seatShape);
-        System.out.println(motorcycle.wheelNum);
-        System.out.println(motorcycle.wheelShape);
-        System.out.println(motorcycle.pedalNum);
-        System.out.println(motorcycle.gastank);
-        System.out.println(motorcycle.motor);
+//        System.out.println(motorcycle.seatShape);
+//        System.out.println(motorcycle.wheelNum);
+//        System.out.println(motorcycle.wheelShape);
+//        System.out.println(motorcycle.pedalNum);
+//        System.out.println(motorcycle.gastank);
+//        System.out.println(motorcycle.motor);
+        System.out.println(motorcycle.toString());
         Motorcycle motorcycle2 = new Motorcycle("round", 4, "square",2, 10, "big");
         System.out.println(motorcycle2.wheelShape);
         System.out.println(motorcycle2.wheelNum);

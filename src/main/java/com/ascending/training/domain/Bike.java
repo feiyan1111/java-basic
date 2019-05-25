@@ -22,7 +22,7 @@ public class Bike {
         public static void main (String[]args){
         Bike bike = new Bike();
         System.out.println(bike.seatShape);
-        System.out.println(bike.toString());
+        System.out.println(bike);
         System.out.println(bike.wheelShape);
         Bike bike2 = new Bike("square", 3, "triangle");
         System.out.println(bike2.wheelShape);
